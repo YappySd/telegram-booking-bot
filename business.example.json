@@ -1,0 +1,26 @@
+{
+  "name": "Demo Studio",
+  "currency": "₴",
+  "step_minutes": 30,
+  "buffer_minutes": 0,
+  "min_lead_minutes": 60,
+  "horizon_days": 14,
+  "reminders_hours": [24, 2],
+  "max_active_per_user": 3,
+  "schedule": {
+    "0": [["10:00", "19:00"]],
+    "1": [["10:00", "19:00"]],
+    "2": [["10:00", "19:00"]],
+    "3": [["10:00", "19:00"]],
+    "4": [["10:00", "19:00"]],
+    "5": [["10:00", "16:00"]],
+    "6": []
+  },
+  "breaks": [["13:00", "14:00"]],
+  "services": [
+    {"id": "cut", "title": "Стрижка", "minutes": 60, "price": 500, "emoji": "✂️"},
+    {"id": "beard", "title": "Борода", "minutes": 30, "price": 300, "emoji": "🧔"},
+    {"id": "combo", "title": "Стрижка + борода", "minutes": 90, "price": 750, "emoji": "💈"},
+    {"id": "kids", "title": "Детская стрижка", "minutes": 30, "price": 350, "emoji": "🧒"}
+  ]
+}

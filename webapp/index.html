@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="color-scheme" content="dark light">
+  <title>Онлайн-запись</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://telegram.org/js/telegram-web-app.js" onerror="window.__noTelegram=true"></script>
+</head>
+<body>
+  <div class="glow" aria-hidden="true"></div>
+  <header class="top">
+    <button class="icon-btn" id="back" aria-label="Назад" hidden>
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <div class="title">
+      <h1 id="biz">Онлайн-запись</h1>
+      <p id="subtitle"></p>
+    </div>
+    <span class="demo" id="demo" hidden>демо</span>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button role="tab" data-tab="book" class="on">Запись</button>
+    <button role="tab" data-tab="my">Мои записи</button>
+  </nav>
+
+  <main id="view" aria-live="polite"></main>
+
+  <footer class="cta" id="cta" hidden>
+    <div class="cta-info" id="cta-info"></div>
+    <button class="primary" id="cta-btn" type="button"></button>
+  </footer>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
